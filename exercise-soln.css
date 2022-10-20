@@ -1,0 +1,95 @@
+/* This is an imported font. To learn more about importing fonts, go here: https://developers.google.com/fonts/docs/getting_started */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* These are variables. To learn more about variables in CSS, go here: https://www.w3schools.com/css/css3_variables.asp */
+:root {
+  --headings: #74c0fc;
+  --links: #91A7FF;
+  --highlight: #41C7C7;
+  --bg: #1f242A;
+  --bg-secondary: #323945;
+  --text: #adb5bd;
+  --code-text: #91A7FF;
+  --share-text: #C4C4C4;
+}
+
+/*** 
+ * Basic settings 
+ ***/
+html {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family:  "Inter";
+  line-height: 2;
+  max-width: 720px;
+  left: 25%;
+  position: absolute;
+}
+
+h1, h2 {
+  color: var(--headings);
+}
+
+p, li, hr {
+  color: var(--text);
+}
+
+a { 
+  text-decoration: none;
+  color: var(--links);
+}
+
+mark {
+  padding: 0.4em;
+  background-color: var(--highlight);
+  font-size: 0.6em;
+}
+
+/*** 
+ * Setting up lists 
+ ***/
+ul {
+  display: flex;
+  margin-top: 0em;
+  margin-left: -40px;
+  flex-wrap: wrap;
+}
+
+li {
+  display: inline;
+  margin-right: 1em;
+}
+
+/*** 
+ * Header list
+ ***/
+#header {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#header-line {
+  border: 1px var(--text) dashed;
+}
+
+/*** 
+ * Project list
+ ***/
+.header {
+  font-size: 1.3em;
+}
+
+.card {
+  padding: 1em;
+  border: 1px var(--text) solid;
+  width: 14em;
+  text-align: center;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0.8em;
+  font-size: 0.8em;
+}
+
